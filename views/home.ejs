@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <title>Tarak Suthar|Developer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <style>
+        .bg-dark{
+            background-color: black;
+      
+        }
+        ul.nav li a, ul.nav li a:visited {
+          color: lightgrey;
+      }
+      
+      ul.nav li a:hover, ul.nav li a:active {
+          color: grey;
+      }
+      
+      ul.nav li.active a {
+          color: white;
+      }
+      .navbar {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border: 0;
+          border-radius: 0;
+          margin-bottom: 0;
+          font-size: 12px;
+          letter-spacing: 5px;
+        }
+        .navbar-nav  li a:hover {
+          color:black !important;
+        }
+       .navbar-dark .navbar-toggle {
+              border-color: transparent;
+              color: #ffffff;
+          }
+          
+          .navbar-toggle:hover {
+              background: white !important;
+              color: black !important;
+          }
+          
+          .navbar-toggle:focus {
+              background: white !important;
+              color: black !important;
+          }
+          
+          .navbar-toggle:hover .icon-bar {
+              background: black !important;
+          }
+          
+          .navbar-toggle:focus .icon-bar {
+              background: black !important;
+          }
+          
+          .navbar-toggle .icon-bar {
+              background: white !important;
+          }
+          body {
+          font: 20px Montserrat, sans-serif;
+          line-height: 1.8;
+          color: #f5f6f7;
+        }
+        .container-fluid {
+          padding-top: 70px;
+          padding-bottom: 70px;
+        }
+        .fa {
+        padding:20px;
+        font-size: 80%;
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        margin: 4px 3px;
+      
+      
+        
+      }
+      .fa:hover {
+          opacity: 0.8;
+          text-decoration: none;
+          color:white;
+      }
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+      .fa-yahoo {
+        background: #430297;
+        color: white;
+      }
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+       .bg-1 { 
+          background-color:#2E4A62; /* Green */
+          color: #ffffff;
+        }
+        .bg-2 { 
+          background-color: #2E4A62; /* Green */
+          color: #ffffff;
+        }
+        .bg-3 { 
+          background-color:  #6B5B95; /* Green */
+          color: #ffffff;
+        }
+        .bg-4{
+            background-color:lightgrey;
+        }
+       .parallax {
+        /* The image used */
+        background-image: url("/images/poster.jpg");
+      
+        /* Set a specific height */
+        min-height: 800px; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .centered{
+          position: absolute;
+          top: 40%;
+          left:50%;
+          transform:translate(-50%,-50%);
+      }
+      .buttom{
+          position: absolute;
+          top: 80%;
+          left:50%;
+          transform:translate(-50%,-50%);
+          color:black;
+          background-color:#ffffff;
+          border:1px solid black;
+          opacity:0.4;
+          filter:alpha(opacity=40); 
+          
+      }
+      .buttom:hover {
+          text-decoration: none; 
+          opacity:0.9;
+          filter:alpha(opacity=90); 
+        }
+      .middle{
+          position: absolute;
+          top: 60%;
+          left:50%;
+          transform:translate(-50%,-50%);
+      }
+        textarea{
+            width:100%;
+        }
+        
+      
+      
+        </style>
+   <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-fixed-top bg-dark ">
+        <div class="container">
+          <div data-aos="fade-up" class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a data-aos="fade-up" class="navbar-brand" href="#">Tarak Suthar</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a data-aos="fade-up" href="#who">WHO</a></li>
+              <li><a data-aos="fade-up" href="#what">WHAT</a></li>
+              <li><a data-aos="fade-up" href="#where">WHERE</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="parallax"></div>
+      <div class="centered"><h1>DEVELOPER</h1></div>
+      <div class="middle"><a href="https://www.instagram.com/tarak_suthar/" text-align="center" class="fa fa-instagram"></a></div>
+      <div class="buttom"><a href="#form"  style="color:black; text-decoration: none; width:100%; display:block; text-align:center; margin-left:0; margin-right:0;  padding-left:0; padding-right:0;">Leave a Message!</a></div>
+      <div  style="height:1000px;">
+            <div id="who" class="container-fluid bg-1 text-center ">
+                <div class="row"><div  class="col-lg-7 text-center"> <img data-aos="fade-up" src="\images\img0.jpg" class="img-responsive img-rounded margin" style="display:inline" alt="Bird" width="300" height="300">
+                </div>
+                <div class="col-lg-5 text-center">
+                    
+                    <p  style="margin-top:30px;" data-aos="fade-up">For those who don't know i am studing computer engineering at ldrp and currently i am half way completing my BE. A Full stack web developer and constantly learning more.So far this is the first thing i have made majorly the apps i make are made using node,Javascript,CSS,html &#38 Bootstrap.
+                    languages I know are Java&#38C.</p></div>
+                </div>
+                
+            </div>
+            <div id="what" class="container-fluid bg-2 text-center">
+                <h3 data-aos="fade-up">What do i Know?</h3>
+                
+                <div style="margin-top:120px;" class="row"><div  class="col-lg-6 text-center"> <img data-aos="fade-up" src="\images\c.png" class="img-rounded" style="display:inline" alt="Bird" width="150" height="150"> 
+                </div>
+                <div class="col-lg-6 text-center">
+                    
+                    <p data-aos="fade-up">C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, while a static type system prevents unintended operations.</p></div>
+                </div>
+                <div  style="margin-top:120px;" class="row"><div  class="col-lg-6 text-center"> <img data-aos="fade-up" src="\images\java.png" class="img-rounded" style="display:inline" alt="Bird" width="150" height="150"> 
+                </div>
+                <div class="col-lg-6 text-center">
+                    
+                    <p data-aos="fade-up">Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.</p></div>
+                </div>
+                <div  style="margin-top:120px;" class="row"><div  class="col-lg-6 text-center"> <img data-aos="fade-up" src="\images\node.jpeg" class="img-rounded" style="display:inline" alt="Bird" width="150" height="150"> 
+                </div>
+                <div class="col-lg-6 text-center">
+                    
+                    <p data-aos="fade-up">Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser.</p></div>
+                </div>
+            </div>
+            <div id="where" class="container-fluid bg-3 text-center">
+                <h1 data-aos="fade-up">Where can u find Me?</h1>
+                <div data-aos="fade-up" class="row">
+                    <div class="col-lg-6 text-center img"><img src="\images\mapicon.png" class="img-responsive img-rounded" style="display:inline" alt="Bird" width="150" height="150"></div>
+                    <div class="col-lg-6 text-center"><p> <b>phone</b> 9510248734</p>
+                    <p><a href="https://www.instagram.com/tarak_suthar/" style="color:white;"><b>Insta</b> tarak_suthar</a></p>
+                    <p> tarak.suthar@yahoo.com</p></div>
+                </div>
+            </div>
+            <div id="form" class="container-fluid bg-4 text-left">
+                <form data-aos="fade-up" action="/process" method="post" enctype="text/plain">
+                    <input type="text"  id="username" placeholder="NAME"  style="color:black;"><br><br>
+                    <input type="email" id="email" placeholder="EMAIL" style="color:black;"><br><br>
+                    <textarea rows="4" cols="50" placeholder="type your message" id="message" style="color:black;"></textarea><br>
+                    <input type="submit" class="button" value="SEND" style="color:black;">
+                    <input type="reset" class="button" value="RESET" style="color:black;">
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+        AOS.init({
+          duration:1200,
+        })
+        </script>
+  </body>
+</html>  
